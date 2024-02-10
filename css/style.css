@@ -1,0 +1,953 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(250, 232, 232);
+    overflow-x: hidden;
+}
+
+.header {
+    border: 2px solid rgb(226, 49, 49);
+    width: 100%;
+}
+
+.above-nav {
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(226, 49, 49);
+    padding-top: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 232, 232);
+    padding-top: 20px;
+    z-index: 101;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 30px 30px;
+    color: rgb(226, 49, 49);
+    font-weight: 700;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.site-logo img {
+    height: 60px;
+    width: 150px;
+    margin-right: 100px;
+}
+
+.right-div {
+    display: flex;
+}
+
+.right-div div {
+    margin: 0 20px;
+}
+
+.cocteles {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(226, 49, 49);
+}
+
+.cocteles a {
+    color: white;
+    text-decoration: none;
+}
+
+.sign-in a {
+    text-decoration: none;
+    color: rgb(226, 49, 49);
+    font-weight: 700;
+}
+
+.add-cart {
+    display: flex;
+}
+
+.add-cart .count {
+    color: rgb(226, 49, 49);
+    height: 20px;
+    width: 20px;
+
+}
+
+.logout a {
+    text-decoration: none;
+    color: rgb(226, 49, 49);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add-cart ion-icon {
+    color: rgb(226, 49, 49);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.add-cart-icon {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    padding-left: 30px;
+}
+
+.menu-icon ion-icon {
+    display: none;
+    font-size: 30px;
+    color: rgb(226, 49, 49);
+}
+
+.main-div {
+    position: relative;
+    display: flex;
+    width: 100%;
+
+}
+
+.container1 {
+    position: absolute;
+    margin: 50px 80px;
+    width: 50%;
+}
+
+.container1 .content {
+    position: absolute;
+    font-family: 'Ranchers', cursive;
+    font-size: 50px;
+    color: white;
+    transform: rotate(-3deg);
+}
+
+.container1 .btn {
+    width: 50%;
+    font-family: sans-serif;
+}
+
+.main-slider {
+    position: absolute;
+    transform: rotate(-2deg);
+    height: 100px;
+}
+
+.main-slider .marquee {
+    height: 95px;
+    background-color: rgb(250, 232, 232);
+    border: 2px solid rgb(226, 49, 49);
+    color: rgb(226, 49, 49);
+}
+
+.main-button {
+    background-color: red;
+    color: white;
+    width: 60%;
+    height: 50px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+.main-slider span {
+    font-size: 40px;
+    font-family: 'Harvest Joy', sans-serif;
+    border-right: 2px solid rgb(226, 49, 49);
+    padding: 40px;
+}
+
+/*********** card design **********/
+.flavours {
+    font-family: 'Ranchers', cursive;
+    text-align: center;
+}
+
+.flavours h2 {
+    font-size: 100px;
+    color: rgb(226, 49, 49);
+    padding-top: 150px;
+    transform: rotate(-4deg);
+}
+
+.card-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-left: 5px;
+    margin-top: 30px;
+}
+
+.card-rating {
+    display: flex;
+}
+
+.card-rating span {
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+.card-slider .btn {
+    width: 100%;
+}
+
+
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-slider img {
+    width: 100%;
+    height: 180px;
+
+}
+
+.img-header {
+    position: absolute;
+    background-color: rgb(245, 123, 106);
+    width: 100%;
+    padding-top: 3px;
+    padding-left: 3px;
+    font-weight: 600;
+    height: 30px;
+}
+
+.card-slider .card-title {
+    font-family: 'Ranchers', cursive;
+    font-size: 40px;
+}
+
+.card1 .btn1 {
+    display: inherit;
+    border: 1px solid rgb(39, 39, 224);
+    text-decoration: none;
+    color: rgb(39, 39, 224);
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card2 .btn2 {
+    display: inherit;
+    border: 1px solid rgb(245, 223, 101);
+    text-decoration: none;
+    color: rgb(245, 223, 101);
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card3 .btn3 {
+    display: inherit;
+    border: 1px solid green;
+    text-decoration: none;
+    color: green;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card4 .btn4 {
+    display: inherit;
+    border: 1px solid red;
+    text-decoration: none;
+    color: red;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card5 .btn5 {
+    display: inherit;
+    border: 1px solid rgb(64, 188, 226);
+    text-decoration: none;
+    color: rgb(64, 188, 226);
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card6 .btn6 {
+    display: inherit;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card1 {
+    color: blue;
+    border: 2px solid blue;
+}
+
+.card2 {
+    color: rgb(245, 223, 101);
+    border: 2px solid rgb(245, 223, 101);
+
+}
+
+.card3 {
+    color: green;
+    border: 2px solid green;
+}
+
+.card4 {
+    color: red;
+    border: 2px solid red;
+}
+
+.card5 {
+    color: skyblue;
+    border: 2px solid skyblue;
+}
+
+.card6 {
+    border: 2px solid black;
+}
+
+
+/* add to cart slider */
+
+.cart,
+.cart1 {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 365px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: rgb(226, 49, 49);
+    color: white;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+}
+
+.cart-active,
+.cart1-active {
+    right: 0;
+    transition: 0.5s;
+}
+
+#cart-close,
+#cart1-close {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.username {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cart-total-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-conten {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cart-remove {
+    cursor: pointer;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.cart-img {
+    height: 100px;
+    width: 100px;
+}
+
+.cart-quantity {
+    width: 40%;
+}
+
+.quantity {
+    margin-left: 30px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-content h1,
+.recommend-title {
+    font-family: 'Ranchers', cursive;
+    margin: 30px;
+    font-size: 50px;
+    transform: rotate(-5deg);
+}
+
+.recommend-product {
+    display: block;
+    gap: 7px;
+    width: 100%;
+}
+
+.cart-card1,
+.cart-card2 {
+    border: 2px solid white;
+    width: 100%;
+
+}
+
+.add-to-cart {
+    padding: 5px 32%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* this cart is in the cart box */
+.recommend-product .add-to-cart {
+    display: inherit;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 0%;
+    color: rgb(226, 49, 49);
+    background-color: whitesmoke;
+}
+
+/* image-container */
+.image-container {
+    width: 100%;
+    position: relative;
+}
+
+.image-fluid {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.orange {
+    position: absolute;
+    left: -110px;
+    top: -100px;
+    height: 250px;
+    width: 250px;
+    z-index: 100;
+}
+
+.pinapple {
+    position: absolute;
+    height: 300px;
+    right: 0px;
+    bottom: 55%;
+    transform: rotate(-4deg);
+    z-index: 100;
+}
+
+.card-container2 {
+    background-color: rgb(226, 49, 49);
+    z-index: 99;
+    width: 100% !important;
+}
+
+.card-container2::before,
+.card-container2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: inherit;
+    transform-origin: center bottom;
+}
+
+.card-container2::before {
+    transform: rotate(3deg);
+    border-top: 2px solid white;
+    z-index: 99;
+    top: 33% !important;
+}
+
+.card-container2::after {
+    top: 100% !important;
+    height: 100px;
+    z-index: 99;
+}
+
+.card-container2 h2 {
+    font-family: 'Ranchers', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    transform: rotate(3deg);
+    padding: 100px;
+}
+
+.card-list2 {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 100px;
+}
+
+.card-list2 .card {
+    border: 3px solid white;
+    color: white;
+    background-color: rgb(226, 49, 49);
+}
+
+.card-list2 .img-header {
+    color: rgb(226, 49, 49);
+    background-color: white;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.card-list2 .add-to-cart {
+    background-color: white;
+    color: rgb(226, 49, 40);
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.card-list2 .shop {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.card-logo {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 30px;
+}
+
+/* about us */
+.about-us {
+    color: white;
+    padding: 5% 0%;
+    margin-top: 10%;
+    position: static;
+    background-color: rgb(226, 49, 49);
+}
+
+
+.about-us .container .row {
+    transform: rotate(2deg);
+    text-align: center;
+}
+
+.about-us .title {
+    font-family: 'Ranchers', cursive;
+    font-size: 70px;
+}
+
+.about-us .about-content {
+    font-size: 20px;
+}
+
+.about-image {
+    position: relative;
+    transform: rotate(5deg);
+    transform: scale(1);
+}
+
+.about-image img {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+
+.about-center-message {
+    top: -25px;
+    position: absolute;
+    background-color: rgb(210, 45, 45);
+    color: white;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.about-button {
+    background-color: rgb(226, 49, 49);
+    color: white;
+    border: 2px solid white;
+    margin: 30px;
+    width: 200px;
+}
+
+.get-social h1 {
+    font-family: 'Ranchers', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(226, 49, 49);
+    transform: rotate(-5deg);
+    margin-top: 40%;
+}
+
+.footer {
+    background-image: url("../img/wave.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    bottom: 0;
+}
+.ekram{
+    margin-top: 100px
+}
+
+.footer-shadow {
+    width: 100%;
+    height: auto;
+    background-color: rgba(252, 252, 253, 0.3); 
+    padding: 5%;
+}
+
+.footer-shadow a {
+    display: block;
+    color: rgb(94, 18, 18);
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.footer-shadow a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.footer-image {
+    display: none;
+}
+
+.subscribe .container {
+    display: none;
+}
+
+.footer-icons {
+    display: none;
+}
+
+/* modal */
+.modal-body {
+    text-align: center;
+}
+
+.place-order {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: rgb(226, 49, 40);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* mobile size */
+@media (min-width: 300px) and (max-width: 575px) {
+    .above-nav {
+        height: auto;
+    }
+
+    .menu-icon ion-icon {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .logout {
+        display: none;
+    }
+
+    .menu ul li,
+    .cocteles,
+    .sign-in {
+        display: none;
+    }
+
+    .site-logo img {
+        height: 30px;
+        width: 75px;
+        margin-right: 0px;
+    }
+
+    .container1 {
+        position: absolute;
+        margin: 50px 50px;
+        width: 80%;
+
+    }
+
+    .container1 .content {
+        font-size: 30px;
+    }
+
+    .cart-menu ul {
+        list-style-type: none;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+
+    .cart-menu li {
+        border-bottom: 1px solid;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .cart-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .flavours h2 {
+        font-size: 40px;
+    }
+
+    .card-slider {
+        margin-top: 30px;
+    }
+
+    .card-slider img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .recommend-product .add-to-cart {
+        margin-bottom: 0;
+    }
+
+    .pinapple {
+        bottom: 80%;
+        right: 0;
+        height: 250px;
+
+    }
+
+
+    .card-container2 h2 {
+        font-size: 35px;
+    }
+
+    .card-container2::before,
+    .card-container2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: inherit;
+        transform-origin: center bottom;
+    }
+
+    .card-container2::before {
+        transform: rotate(2deg);
+        border-top: 2px solid white;
+        z-index: 99;
+        top: 18% !important;
+    }
+
+    .card-container2::after {
+        top: 100% !important;
+        height: 100px;
+        z-index: 99;
+    }
+
+    .card-list2 {
+        display: block;
+    }
+
+    .about-us {
+        margin-top: 150px;
+    }
+
+    .about-us .title {
+        font-size: 50px;
+        padding: 20px;
+    }
+
+    .about-us .container .row {
+        transform: rotate(0deg);
+    }
+
+    .about-us .title {
+        font-size: 40px;
+    }
+
+    .about-us .content {
+        font-size: 10px;
+    }
+
+    .about-button {
+        margin-bottom: 100px;
+    }
+
+    .about-center-message {
+        padding: 30px 0px;
+
+    }
+
+    .footer .container-fluid {
+        display: none;
+    }
+
+    .footer-image {
+        display: block;
+    }
+
+    .get-social h1{
+        font-size: 50px;
+        margin-top: 130%;
+        padding: 30px 0px;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .subscribe-box input {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        border: none;
+    }
+
+
+
+    ::placeholder {
+        padding-left: 20px;
+    }
+
+    .subscribe .container {
+        display: flex;
+        margin-top: 250px;
+        color: white;
+
+    }
+
+    .subscribe-icon {
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 3px 30px;
+
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        margin-top: 30px;
+        padding-bottom: 10px;
+
+    }
+
+    .footer-icons a {
+        color: white;
+    }
+
+    
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .container1 .content {
+        font-size: 45px;
+    }
+
+    .menu-icon ion-icon {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .sign-in {
+        display: block;
+        padding-right: 50px;
+    }
+
+    .menu ul li,
+    .cocteles {
+        display: none;
+    }
+
+    .card-container2::before,
+    .card-container2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: inherit;
+        transform-origin: center bottom;
+    }
+
+    .card-container2::before {
+        transform: rotate(2deg);
+        border-top: 2px solid white;
+        z-index: 99;
+        top: 22% !important;
+    }
+
+    .card-container2::after {
+        top: 100% !important;
+        height: 100px;
+        z-index: 99;
+    }
+
+    .pinapple {
+        top: 10%;
+    }
+
+
+    .site-logo img {
+        height: 50px;
+        width: 100px;
+        margin-right: 0px;
+    }
+
+    .get-social h1{
+        margin-top: 80%;
+        padding: 30px 0px;
+    }
+
+    .footer {
+        height: auto;
+        padding-top: 200px;
+    }
+    .footer .row .ekr{
+        margin: 15px;
+    }
+    .ekram{
+        margin-top: 50px
+    }
+}
